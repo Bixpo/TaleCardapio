@@ -268,7 +268,7 @@ export default function App() {
 
               <div>
                 <b>Um sabor especial para o seu dia</b>
-                <p>5 opções deliciosas por R$ 15 cada</p>
+                <p>4 opções deliciosas por R$ 15 cada</p>
               </div>
 
               <span className="promo-pill">Peça agora</span>
