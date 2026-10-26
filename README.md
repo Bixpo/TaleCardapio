@@ -1,15 +1,27 @@
-# Cardápio Digital — Pastelaria do Japonês
+# Talê — Cardápio e Painel Administrativo
 
-Protótipo de apresentação feito em React + Vite, com apenas três etapas:
-1. Cardápio e carrinho na mesma tela.
-2. Dados do comprador e finalização.
-3. Pedido confirmado.
+Projeto React + Vite com cardápio, carrinho, checkout e painel administrativo local.
 
-## Como executar
-1. Instale o Node.js (versão LTS).
-2. Extraia o ZIP e abra a pasta `cardapio-react` no terminal.
-3. Execute `npm install` e depois `npm run dev`.
-4. Abra o endereço local que o Vite mostrar no terminal.
+## Executar
+1. Instale Node.js LTS.
+2. No terminal, dentro desta pasta, execute `npm install`.
+3. Execute `npm run dev`.
 
-## Importante
-Os pedidos são guardados no `localStorage` do navegador apenas para demonstração. Para receber os dados de clientes de outros celulares e consultar tudo centralizadamente, será necessário conectar um backend e banco de dados. Este protótipo não possui painel administrativo.
+## Painel administrativo
+Acesse `/#admin` ou clique no ícone de cadeado no cabeçalho.
+
+Credenciais iniciais:
+- Usuário: `admin`
+- Senha: `Tale@2026`
+
+Esta é uma autenticação demonstrativa local, não uma proteção de servidor. Para trocar as credenciais iniciais, edite os valores padrão em `src/App.jsx` na função `adminLogin`. As credenciais são guardadas apenas no navegador se forem alteradas por código; não use esta versão para dados confidenciais.
+
+## Funcionalidades
+- Dashboard de pedidos, faturamento, pendências e clientes únicos.
+- Lista de pedidos e atualização de status.
+- Clientes agrupados por telefone e histórico resumido.
+- Criar, editar e remover produtos.
+- Exportar backup JSON de produtos e pedidos.
+
+## Limitação importante do localStorage
+Os pedidos e produtos são armazenados no navegador atual. Não existe sincronização entre celulares/computadores. Os dados podem ser apagados ao limpar dados do navegador. O backup baixa um arquivo JSON para guardar uma cópia.

@@ -36,3 +36,37 @@
 .product-image .tag {
   z-index: 3;
 }
+
+/* Painel administrativo Talê */
+.admin-page{max-width:1160px}
+.admin-toolbar,.admin-nav,.order-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.secondary-btn,.text-btn,.danger-btn,.icon-admin-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #dfe7ef;background:#fff;color:#41566a;border-radius:8px;padding:10px 12px;font-size:12px;font-weight:700}
+.secondary-btn:hover,.admin-nav button:hover{background:#f4f9fd}
+.admin-nav{margin:24px 0 18px;border-bottom:1px solid #e7edf2;gap:5px}
+.admin-nav button{display:flex;align-items:center;gap:8px;border:0;border-bottom:2px solid transparent;background:transparent;color:#6b7c8d;padding:13px 15px;font-weight:700;font-size:12px}
+.admin-nav button.active{color:#168be5;border-bottom-color:#168be5}
+.admin-nav button b{background:#eaf6ff;border-radius:15px;padding:3px 6px;font-size:10px}
+.admin-page .stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+.admin-page .stat{min-width:0}
+.admin-page .stat>b{font-size:clamp(16px,2vw,22px)}
+.admin-panel select,.order-actions select{border:1px solid #dfe6ed;border-radius:7px;padding:9px;background:#fff;color:#33475a;font-size:12px}
+.order-items{display:grid;gap:5px;padding:10px 0;color:#657585;font-size:12px}
+.order-actions{justify-content:space-between;border-top:1px solid #edf0f4;padding-top:12px;margin-top:8px}
+.order-actions label{display:flex;align-items:center;gap:8px;color:#71808e;font-size:11px}
+.danger-btn{color:#c24141;border-color:#f2d4d4}
+.danger-btn:hover,.icon-admin-btn.danger:hover{background:#fff2f2}
+.product-editor{padding:18px;border:1px solid #dcebf7;background:#f8fcff;border-radius:10px;margin:0 16px 16px;display:grid;gap:14px}
+.editor-heading{display:flex;align-items:center;justify-content:space-between}
+.editor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.editor-grid label{display:grid;gap:6px;font-size:11px;font-weight:700;color:#526577}
+.editor-grid label.wide{grid-column:1/-1}
+.editor-grid input{width:100%;min-width:0;border:1px solid #dfe6ed;border-radius:7px;padding:10px;font-size:12px;background:white}
+.product-admin-row{display:flex;align-items:center;gap:12px;border:1px solid #e8edf2;border-radius:10px;padding:12px}
+.product-admin-emoji{width:45px;height:45px;display:grid;place-items:center;border-radius:9px;background:#fff0d4;font-size:25px;flex-shrink:0}
+.product-admin-info{display:grid;gap:4px;flex:1;min-width:0}
+.product-admin-info b{font-size:12px}
+.product-admin-info small{font-size:11px;color:#7d8996;overflow-wrap:anywhere}
+.product-admin-row>strong{font-size:12px;color:#168be5;white-space:nowrap}
+.icon-admin-btn{padding:8px}
+.admin-login-page .back{margin:6px auto 0}
+@media(max-width:760px){.admin-page .stats{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-toolbar{width:100%}.admin-heading{align-items:flex-start;gap:10px}.admin-heading h1{font-size:23px}.admin-nav{overflow-x:auto;flex-wrap:nowrap}.admin-nav button{white-space:nowrap;padding:12px 10px}.editor-grid{grid-template-columns:1fr}.editor-grid label.wide{grid-column:auto}.product-admin-row{gap:8px;padding:9px}.product-admin-info small{display:none}.product-admin-row>strong{font-size:11px}.order-actions{align-items:flex-start}.order-actions label{flex-wrap:wrap}.admin-panel .panel-heading{align-items:flex-start;flex-wrap:wrap}}
