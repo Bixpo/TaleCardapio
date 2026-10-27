@@ -277,7 +277,7 @@ export default function App() {
       <header className="topbar">
         <button className="brand" onClick={goMenu}>
           <span className="logo" style={{ width: '48px', height: '48px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', border: 'none' }}>
-            <img src="/logo.png" alt="Logo Talê" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <img src="/products/logo.png" alt="Logo Talê" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </span>
 
           <span>
